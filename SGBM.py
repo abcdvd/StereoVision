@@ -8,8 +8,7 @@ target.sort()
 target.pop(0)
 
 def SGBM(name):
-    # Read the left and right images
-    left_img = cv2.imread(f'data/{name}/im0.png', 0)  # Load grayscale image
+    left_img = cv2.imread(f'data/{name}/im0.png', 0)
     right_img = cv2.imread(f'data/{name}/im1.png', 0)
 
     text = open(f"./data/{name}/calib.txt", 'r')
